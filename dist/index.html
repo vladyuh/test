@@ -34,7 +34,7 @@
   <body class="perf-no-animation page">
     <header class="header">
       <div class="container">
-        <div class="header-logo"><img src="img/common/logo.svg" width="247" height="35"></div>
+        <div class="header-logo"><img src="img/common/logo.svg" width="247" height="35" alt="logo"></div>
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="is-active"><a href="#">Бизнес </a></li>
@@ -72,7 +72,7 @@
               <source srcset="img/common/banner-1024.jpg" type="image/jpg" media="(max-width: 1024px)">
               <source srcset="img/common/banner-768.jpg" type="image/jpg" media="(max-width: 768px)">
               <source srcset="img/common/banner-480.jpg" type="image/jpg" media="(max-width: 480px)">
-              <source srcset="img/common/banner.webp" type="image/webp"><img src="img/common/banner.jpg" width="100%" height="100%" alt="Фон">
+              <source srcset="img/common/banner.webp" type="image/webp"><img src="img/common/banner.jpg" width="375" height="700" alt="Фон">
             </picture>
           </div>
           <div class="banner-block__content">
@@ -95,7 +95,7 @@
         <div class="container">
           <div class="order-block__bg">
             <picture>
-              <source srcset="img/common/bg.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/common/bg.png" width="100%" height="100%" alt="Фон">
+              <source srcset="img/common/bg.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/common/bg.png" width="375" height="700" alt="Фон">
             </picture>
           </div>
           <h2 class="section-h2 order-block__title">Оформление  <span class="blue">Заказа</span></h2>
@@ -181,14 +181,10 @@
             </div>
             <div class="form__field">
               <div class="input input-file" data-caption="Прикрепить файл">
-                <label class="input-file__styled" for="file">
-                  <div class="icon">
+                <label class="input-file__styled" for="file"><span class="icon">
                     <svg width="20" height="20">
                       <use xlink:href="img/sprites/sprite.svg#ic_file"></use>
-                    </svg>
-                  </div>
-                  <div class="caption">Прикрепить файл</div>
-                </label>
+                    </svg></span><span class="caption">Прикрепить файл</span></label>
                 <input type="file" name="file" id="file">
               </div>
             </div>

@@ -22,7 +22,7 @@ block content
                     source(srcset="img/common/banner-768.jpg" type="image/jpg" media="(max-width: 768px)")
                     source(srcset="img/common/banner-480.jpg" type="image/jpg" media="(max-width: 480px)")
                     source(srcset="img/common/banner.webp" type="image/webp")
-                    img(src="img/common/banner.jpg" width="100%" height="100%"  alt="Фон")
+                    img(src="img/common/banner.jpg" width="375" height="700"  alt="Фон")
             .banner-block__content
                 h1.section-h1.banner-block__title
                     span.blue LOREM IPSUM 
@@ -43,7 +43,7 @@ block content
             .order-block__bg
                 picture
                     source(srcset="img/common/bg.webp" type="image/webp")
-                    img(loading="lazy" class="lazyload" data-src="img/common/bg.png" width="100%" height="100%" alt="Фон")
+                    img(loading="lazy" class="lazyload" data-src="img/common/bg.png" width="375" height="700" alt="Фон")
             h2.section-h2.order-block__title Оформление  <span class="blue">Заказа</span>
             .order-block__caption Перед заполнением формы ознакомьтесь с нашей схемой работы!
             .order-block__items
@@ -92,10 +92,10 @@ block content
                 .form__field
                     .input.input-file(data-caption='Прикрепить файл')
                         label.input-file__styled(for="file")
-                            .icon
+                            span.icon
                                 svg(width='20' height='20')
                                     use(xlink:href='img/sprites/sprite.svg#ic_file')
-                            .caption Прикрепить файл
+                            span.caption Прикрепить файл
                         input(type='file' name="file" id="file")
                 .form__field
                     button.btn.btn-primary(type='submit') Отправить
