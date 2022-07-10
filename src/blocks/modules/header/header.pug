@@ -1,0 +1,12 @@
+include ../../components/burger/burger
+header.header
+    .container
+        .header-logo: img(src="img/common/logo.svg" width="247" height="35")
+        nav.header-nav
+            ul.header-nav__list
+                li.is-active: a(href="#") Бизнес 
+                li: a(href="#") О нас
+                li: a(href="#") Цены
+                li: a(href="#order") Оформить заказ
+        .header-burger
+            +burger

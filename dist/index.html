@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta name="theme-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="prefetch" href="img/sprites/sprite.svg" as="image" crossorigin="">
+    <link rel="preload" href="fonts/subset-Lato-Regular.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/subset-Lato-Semibold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/subset-Lato-Bold.woff2" as="font" crossorigin="">
+    <link rel="preload" href="fonts/subset-Lato-Heavy.woff2" as="font" crossorigin="">
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/index.min.css">
+  </head>
+  <body class="perf-no-animation page">
+    <header class="header">
+      <div class="container">
+        <div class="header-logo"><img src="img/common/logo.svg" width="247" height="35"></div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="is-active"><a href="#">Бизнес </a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#order">Оформить заказ</a></li>
+          </ul>
+        </nav>
+        <div class="header-burger">
+              <div class="burger"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-menu__close">
+              <div class="burger open"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <ul class="mobile-menu__nav">
+          <li class="is-active"><a href="#">Бизнес </a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#order">Оформить заказ</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <section class="banner-block">
+        <div class="container">
+          <div class="banner-block__bg">
+            <picture>
+              <source srcset="img/common/banner-1024.webp" type="image/webp" media="(max-width: 1024px)">
+              <source srcset="img/common/banner-768.webp" type="image/webp" media="(max-width: 768px)">
+              <source srcset="img/common/banner-480.webp" type="image/webp" media="(max-width: 480px)">
+              <source srcset="img/common/banner-1024.jpg" type="image/jpg" media="(max-width: 1024px)">
+              <source srcset="img/common/banner-768.jpg" type="image/jpg" media="(max-width: 768px)">
+              <source srcset="img/common/banner-480.jpg" type="image/jpg" media="(max-width: 480px)">
+              <source srcset="img/common/banner.webp" type="image/webp"><img src="img/common/banner.jpg" width="100%" height="100%" alt="Фон">
+            </picture>
+          </div>
+          <div class="banner-block__content">
+            <h1 class="section-h1 banner-block__title"><span class="blue">LOREM IPSUM </span>DOLOR SIT
+              AMETCONSECTETUR <span class="blue">ADIPISCING</span>
+            </h1>
+            <div class="banner-block__desc">
+              <p><strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong></p>
+              <ul>
+                <li>Totam rem aperiam eaque ipsa</li>
+                <li>Sit voluptatem accusantium doloremque laudantium</li>
+                <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+              </ul>
+            </div>
+            <div class="banner-block__links"><a class="btn btn-primary" href="#">ЗАКАЗАТЬ</a><a class="btn btn-secondary" href="#">подробнее</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="order-block" id="order">
+        <div class="container">
+          <div class="order-block__bg">
+            <picture>
+              <source srcset="img/common/bg.webp" type="image/webp"><img class="lazyload" loading="lazy" data-src="img/common/bg.png" width="100%" height="100%" alt="Фон">
+            </picture>
+          </div>
+          <h2 class="section-h2 order-block__title">Оформление  <span class="blue">Заказа</span></h2>
+          <div class="order-block__caption">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+          <div class="order-block__items">
+            <div class="order-block__item">
+              <div class="icon">
+                <svg width="55" height="55">
+                  <use xlink:href="img/sprites/sprite.svg#ic_search"></use>
+                </svg>
+              </div>
+              <div class="caption">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="order-block__item">
+              <div class="icon">
+                <svg width="55" height="55">
+                  <use xlink:href="img/sprites/sprite.svg#ic_percent"></use>
+                </svg>
+              </div>
+              <div class="caption">Сonsecteturadipiscing elit</div>
+            </div>
+            <div class="order-block__item">
+              <div class="icon">
+                <svg width="55" height="55">
+                  <use xlink:href="img/sprites/sprite.svg#ic_doc"></use>
+                </svg>
+              </div>
+              <div class="caption">Sed do eiusmod tempor</div>
+            </div>
+            <div class="order-block__item">
+              <div class="icon">
+                <svg width="55" height="55">
+                  <use xlink:href="img/sprites/sprite.svg#ic_convert"></use>
+                </svg>
+              </div>
+              <div class="caption">Esse cillum dolore eu fugiat</div>
+            </div>
+            <div class="order-block__item">
+              <div class="icon">
+                <svg width="55" height="55">
+                  <use xlink:href="img/sprites/sprite.svg#ic_cash"></use>
+                </svg>
+              </div>
+              <div class="caption">Excepteur sint occaecat cupidatat non proident</div>
+            </div>
+          </div>
+          <form class="order-block__form form">
+            <div class="form__field">
+              <div class="select">
+                <select required="required" data-title="Выберите тип системы" name="type">
+                  <option value="" disabled="disabled" selected="selected">Выберите тип системы</option>
+                  <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                  <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                  <option value="Et harum quidem">Et harum quidem</option>
+                  <option value="Temporibus autem">Temporibus autem</option>
+                  <option value="Itaque earum rerum">Itaque earum rerum</option>
+                  <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                  <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                  <option value="Et harum quidem">Et harum quidem</option>
+                  <option value="Temporibus autem">Temporibus autem</option>
+                  <option value="Itaque earum rerum">Itaque earum rerum</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="input input-email">
+                <input type="email" placeholder="Ваш e-mail" name="email" required="required">
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="input input-text">
+                <input type="text" placeholder="Ваше имя" name="user" required="required">
+              </div>
+            </div>
+            <div class="form__field form__field--fullwidth">
+              <div class="label">
+                <div class="label-caption">Sed ut perspiciatis, unde omnis iste natus</div>
+                <div class="label-value"></div>
+              </div>
+              <div class="input input-range">
+                <input type="range" min="1" max="100" value="75" name="range">
+              </div>
+            </div>
+            <div class="form__field">
+              <div class="input input-file" data-caption="Прикрепить файл">
+                <label class="input-file__styled" for="file">
+                  <div class="icon">
+                    <svg width="20" height="20">
+                      <use xlink:href="img/sprites/sprite.svg#ic_file"></use>
+                    </svg>
+                  </div>
+                  <div class="caption">Прикрепить файл</div>
+                </label>
+                <input type="file" name="file" id="file">
+              </div>
+            </div>
+            <div class="form__field">
+              <button class="btn btn-primary" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-copyright">
+          <div class="footer-copyright__text">© 2018 «LoremIpsum.net» Все права защищены.</div>
+        </div>
+        <div class="footer-payment">
+          <div class="footer-payment__item">
+            <div class="image">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprites/sprite.svg#ic_qiwi"></use>
+              </svg>
+            </div>
+            <div class="caption">QIWI</div>
+          </div>
+          <div class="footer-payment__item">
+            <div class="image">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprites/sprite.svg#ic_ymoney"></use>
+              </svg>
+            </div>
+            <div class="caption">Yandex Money</div>
+          </div>
+          <div class="footer-payment__item">
+            <div class="image">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprites/sprite.svg#ic_wmoney"></use>
+              </svg>
+            </div>
+            <div class="caption">Web Money</div>
+          </div>
+        </div>
+        <div class="footer-contacts"><a class="footer-contacts__item" href="mailto:info@ipsum228.com">
+            <div class="icon">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#ic_mail"></use>
+              </svg>
+            </div>
+            <div class="value">info@ipsum228.com</div></a><a class="footer-contacts__item" href="//vk.com">
+            <div class="icon">
+              <svg width="24" height="24">
+                <use xlink:href="img/sprites/sprite.svg#ic_vk"></use>
+              </svg>
+            </div>
+            <div class="value">Мы вконтакте</div></a></div>
+      </div>
+    </footer>
+    <div class="scroll-top">
+      <svg width="24" height="24">
+        <use xlink:href="img/sprites/sprite.svg#ic_up"></use>
+      </svg>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

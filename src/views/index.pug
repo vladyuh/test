@@ -1,0 +1,104 @@
+extends layouts/default
+include helpers/mixins
+include ../blocks/components/breadcrumbs/breadcrumbs.pug
+include ../blocks/components/form/form.pug
+include ../blocks/components/checkbox/checkbox.pug
+include ../blocks/components/headers/headers.pug
+include ../blocks/components/table/table.pug
+include ../blocks/components/popup/popup.pug
+
+
+block variables
+    - const title = "Главная"
+block content
+    section.banner-block
+        .container
+            .banner-block__bg
+                picture
+                    source(srcset="img/common/banner-1024.webp" type="image/webp" media="(max-width: 1024px)")
+                    source(srcset="img/common/banner-768.webp" type="image/webp" media="(max-width: 768px)")
+                    source(srcset="img/common/banner-480.webp" type="image/webp" media="(max-width: 480px)")
+                    source(srcset="img/common/banner-1024.jpg" type="image/jpg" media="(max-width: 1024px)")
+                    source(srcset="img/common/banner-768.jpg" type="image/jpg" media="(max-width: 768px)")
+                    source(srcset="img/common/banner-480.jpg" type="image/jpg" media="(max-width: 480px)")
+                    source(srcset="img/common/banner.webp" type="image/webp")
+                    img(src="img/common/banner.jpg" width="100%" height="100%"  alt="Фон")
+            .banner-block__content
+                h1.section-h1.banner-block__title
+                    span.blue LOREM IPSUM 
+                    | DOLOR SIT
+                    | AMETCONSECTETUR 
+                    span.blue ADIPISCING
+                .banner-block__desc
+                    p: strong At vero eos et accusamus et iusto odio dignissimos ducimus!
+                    ul
+                        li Totam rem aperiam eaque ipsa
+                        li Sit voluptatem accusantium doloremque laudantium
+                        li Sed ut perspiciatis, unde omnis iste natus error
+                .banner-block__links
+                    a(href="#").btn.btn-primary ЗАКАЗАТЬ
+                    a(href="#").btn.btn-secondary подробнее
+    section.order-block#order
+        .container
+            .order-block__bg
+                picture
+                    source(srcset="img/common/bg.webp" type="image/webp")
+                    img(loading="lazy" class="lazyload" data-src="img/common/bg.png" width="100%" height="100%" alt="Фон")
+            h2.section-h2.order-block__title Оформление  <span class="blue">Заказа</span>
+            .order-block__caption Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            .order-block__items
+                .order-block__item
+                    .icon: +icons("#ic_search",55)
+                    .caption Lorem ipsum dolor sit amet
+                .order-block__item
+                    .icon: +icons("#ic_percent",55)
+                    .caption Сonsecteturadipiscing elit
+                .order-block__item
+                    .icon: +icons("#ic_doc",55)
+                    .caption Sed do eiusmod tempor
+                .order-block__item
+                    .icon: +icons("#ic_convert",55)
+                    .caption Esse cillum dolore eu fugiat
+                .order-block__item
+                    .icon: +icons("#ic_cash",55)
+                    .caption Excepteur sint occaecat cupidatat non proident
+            form.order-block__form.form
+                .form__field
+                    .select
+                        select(required='required' data-title='Выберите тип системы' name="type")
+                            option(value='' disabled='disabled' selected='selected') Выберите тип системы
+                            option(value='Sed ut perspiciatis') Sed ut perspiciatis
+                            option(value='Nemo enim ipsam') Nemo enim ipsam
+                            option(value='Et harum quidem') Et harum quidem
+                            option(value='Temporibus autem') Temporibus autem
+                            option(value='Itaque earum rerum') Itaque earum rerum
+                            option(value='Sed ut perspiciatis') Sed ut perspiciatis
+                            option(value='Nemo enim ipsam') Nemo enim ipsam
+                            option(value='Et harum quidem') Et harum quidem
+                            option(value='Temporibus autem') Temporibus autem
+                            option(value='Itaque earum rerum') Itaque earum rerum
+                .form__field
+                    .input.input-email
+                        input(type='email' placeholder='Ваш e-mail' name="email" required='required')
+                .form__field
+                    .input.input-text
+                        input(type='text' placeholder='Ваше имя' name="user" required='required')
+                .form__field.form__field--fullwidth
+                    .label
+                        .label-caption Sed ut perspiciatis, unde omnis iste natus
+                        .label-value
+                    .input.input-range
+                        input(type='range' min='1' max='100' value='75' name="range")
+                .form__field
+                    .input.input-file(data-caption='Прикрепить файл')
+                        label.input-file__styled(for="file")
+                            .icon
+                                svg(width='20' height='20')
+                                    use(xlink:href='img/sprites/sprite.svg#ic_file')
+                            .caption Прикрепить файл
+                        input(type='file' name="file" id="file")
+                .form__field
+                    button.btn.btn-primary(type='submit') Отправить
+
+block scripts
+    script(src="js/main.js")

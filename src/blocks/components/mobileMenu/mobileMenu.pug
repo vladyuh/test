@@ -1,0 +1,10 @@
+include ../../components/burger/burger
+.mobile-menu
+  .container
+    .mobile-menu__close
+      +burger('open')
+    ul.mobile-menu__nav
+      li.is-active: a(href="#") Бизнес 
+      li: a(href="#") О нас
+      li: a(href="#") Цены
+      li: a(href="#order") Оформить заказ
